@@ -1,4 +1,4 @@
-<?hh
+<?php
 /*
  *  Copyright (c) 2014, Facebook, Inc.
  *  All rights reserved.
@@ -9,8 +9,8 @@
  *
  */
 
-abstract class :bootstrap:base extends :x:element implements HasXHPHelpers {
-  use XHPHelpers;
+abstract class :bootstrap:base extends :x:element {
+//   use XHPHelpers;
 
   attribute
     Stringish class,

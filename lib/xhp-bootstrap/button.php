@@ -1,4 +1,4 @@
-<?hh
+<?php
 /*
  *  Copyright (c) 2014, Facebook, Inc.
  *  All rights reserved.
@@ -33,7 +33,7 @@ class :bootstrap:button extends :bootstrap:base {
     bool disabled = false,
     Stringish href;
 
-  protected function render(): XHPRoot {
+  protected function render() {
     $ret =
       <a href={$this->:href}>
         {$this->getChildren()}
@@ -65,7 +65,7 @@ class :bootstrap:button extends :bootstrap:base {
     return $ret;
   }
 
-  <<ExampleTitle('Uses')>>
+/*  /* <<ExampleTitle('Uses')>> */
   public static function __example1() {
     return
       <x:frag>
@@ -93,7 +93,7 @@ class :bootstrap:button extends :bootstrap:base {
       </x:frag>;
   }
 
-  <<ExampleTitle('Sizes')>>
+  /* <<ExampleTitle('Sizes')>> */
   public static function __example2() {
     return
       <x:frag>
@@ -112,7 +112,7 @@ class :bootstrap:button extends :bootstrap:base {
       </x:frag>;
   }
 
-  <<ExampleTitle('Active State')>>
+  /* <<ExampleTitle('Active State')>> */
   public static function __example3() {
     return
       <x:frag>
@@ -125,7 +125,7 @@ class :bootstrap:button extends :bootstrap:base {
       </x:frag>;
   }
 
-  <<ExampleTitle('Disabled State')>>
+  /* <<ExampleTitle('Disabled State')>> */
   public static function __example4() {
     return
       <x:frag>
@@ -138,7 +138,7 @@ class :bootstrap:button extends :bootstrap:base {
       </x:frag>;
   }
 
-  <<ExampleTitle('Block')>>
+  /* <<ExampleTitle('Block')>> */
   public static function __example5() {
     return
       <x:frag>

@@ -1,4 +1,4 @@
-<?hh
+<?php
 /*
  *  Copyright (c) 2014, Facebook, Inc.
  *  All rights reserved.
@@ -23,7 +23,7 @@ class :bootstrap:root extends :bootstrap:base {
     return <div id="wrap">{$this->getChildren()}</div>;
   }
 
-  <<ExampleTitle("Root")>>
+/*  <<ExampleTitle("Root")>> */
   public static function __example1() {
     return
       <bootstrap:root>

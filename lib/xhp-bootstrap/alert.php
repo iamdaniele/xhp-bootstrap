@@ -1,4 +1,4 @@
-<?hh
+<?php
 /*
  *  Copyright (c) 2014, Facebook, Inc.
  *  All rights reserved.
@@ -21,7 +21,7 @@ final class :bootstrap:alert extends :bootstrap:base {
       'danger'
     } use = 'warning';
 
-  protected function render(): XHPRoot {
+  protected function render() {
     foreach($this->getChildren('a') as $child) {
       assert($child instanceof :a);
       $child->addClass('alert-link');
@@ -45,23 +45,4 @@ final class :bootstrap:alert extends :bootstrap:base {
     return $ret;
   }
 
-  <<ExampleTitle('Uses')>>
-  public static function __example1() {
-    return
-      <x:frag>
-        <bootstrap:alert use="success">
-          You rock
-        </bootstrap:alert>
-        <bootstrap:alert use="info">
-          Maybe you rock
-        </bootstrap:alert>
-        <bootstrap:alert use="warning">
-          WAT??
-        </bootstrap:alert>
-        <bootstrap:alert use="danger" dismiss={true}>
-          May day May day
-          <a href="https://somewhere.com">Go here</a>
-        </bootstrap:alert>
-      </x:frag>;
-  }
 }
