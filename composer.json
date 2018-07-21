@@ -1,11 +1,11 @@
 {
-  "name": "hhvm/xhp-bootstrap",
+  "name": "taniele/xhp-bootstrap",
   "description": "Use Bootstrap with XHP",
-  "keywords": ["facebook", "xhp", "hhvm", "hack", "bootstrap"],
-  "homepage": "https://github.com/hhvm/xhp-bootstrap",
+  "keywords": ["facebook", "xhp", "php", "bootstrap"],
+  "homepage": "https://github.com/taniele/xhp-bootstrap",
   "license": ["BSD-3-Clause"],
   "require": {
-    "facebook/xhp-lib": "^2.2.0"
+    "phplang/xhp-lib": "0.*"
   },
   "require-dev": {
     "phpunit/phpunit": "^3.5"
